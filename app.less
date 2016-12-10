@@ -47,17 +47,24 @@
 [ng-click], [data-ng-click], [x-ng-click] { cursor: pointer; }
 
 // css de juan
-[ave-default-election] .adminhead {
-    .navbar-toggle {
-        border-color: #ddd;
-    }
-    .icon-bar {
-        background-color: #ccc;
-    }
-    .navbar-collapse li {
+@media(max-width: 768px) {
+    [ave-default-election] .adminhead {
         background-color: #2C3E50;
-    }
-    [av-change-lang] li {
-        color: white;
+        .navbar-toggle {
+            border-color: #ddd;
+        }
+        .icon-bar {
+            background-color: #ccc;
+        }
+        .navbar-collapse li {
+            background-color: #2C3E50;
+        }
+        [av-change-lang] li {
+            color: white !important;
+        }
+        [av-change-lang] li:hover,
+        [av-change-lang] li:focus {
+            color: black;
+        }
     }
 }
