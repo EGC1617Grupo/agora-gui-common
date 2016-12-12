@@ -36,7 +36,8 @@ angular.module(
   'dndLists',
   'angularLoad',
   'angular-date-picker-polyfill',
-  'ng-autofocus'
+  'ng-autofocus',
+  'nvd3'
 ]);
 
 angular.module('jm.i18next').config(function ($i18nextProvider, ConfigServiceProvider) {
