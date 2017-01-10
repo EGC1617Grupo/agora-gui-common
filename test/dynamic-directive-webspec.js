@@ -1,5 +1,6 @@
 /* jshint ignore:start */
 describe("dynamic-directive tests", function () {
+"use strict";
 
   beforeEach(function () {
     var html = '<textarea id="testTextArea" ng-model="testModel" ng-init="testModel = \'whatever\'"></textarea>';
