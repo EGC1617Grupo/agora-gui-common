@@ -18,10 +18,10 @@
 @import "../../external.less";
 
 /* Global Config */
-@av-primary: #2C3E50;
-@av-secondary: #00A489;
-@av-primary-contrast: white;
-@av-secondary-contrast: white;
+@av-primary: #006068;
+@av-secondary: #000000;
+@av-primary-contrast: #ffffff;
+@av-secondary-contrast: #ffffff;
 @brand-primary: @av-primary;
 @brand-success: @av-secondary;
 @link-color: @av-secondary;
@@ -43,4 +43,44 @@
 [ave-default-election] .background .top-section,
 [ave-public-view] .background .top-section {
   color: #333;
+  background-color: #ffffff;
+}
+
+[ave-default-election] .avb-top-navbar a {
+  color: @av-secondary-contrast;
+}
+
+[ave-default-election] .avb-top-navbar .pull-right {
+  display: none;
+}
+
+[ave-default-election] .avb-top-navbar > .text-center,
+[av-booth] .avb-top-navbar > .text-center {
+  text-align: right !important;
+}
+
+[av-booth] .basic-booth-layout .warnings .text-brand-primary,
+[av-booth] .warnings .text-brand-primary {
+  background-color: @av-secondary;
+}
+
+img.logo-img
+{
+    max-height: 45px !important;
+    max-width: 220px !important;
+    width: auto;
+}
+
+[av-booth] .avb-top-navbar .powered-by {
+    margin-right: 12px;
+}
+
+
+[av-booth] .btn.btn-block.btn-lg.btn-success.btn-plain
+{
+    background-color: #555 !important;
+
+    &:hover {
+      background-color: #333 !important;
+    }
 }

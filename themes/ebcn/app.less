@@ -18,10 +18,10 @@
 @import "../../external.less";
 
 /* Global Config */
-@av-primary: #E65C56;
-@av-secondary: #768BAB;
-@av-primary-contrast: white;
-@av-secondary-contrast: white;
+@av-primary: #9e0054;
+@av-secondary: #000000;
+@av-primary-contrast: #FFFFFF;
+@av-secondary-contrast: #FFFFFF;
 @brand-primary: @av-primary;
 @brand-success: @av-secondary;
 @link-color: @av-secondary;
@@ -40,47 +40,32 @@
 
 @import "../../app.less";
 
-[av-booth] .navbar-unfixed-top a
-{
-  color: white;
-  text-decoration: underline;
-
-  &:hover
-  {
-    text-decoration: none;
-  }
+[ave-default-election] .background .top-section,
+[ave-public-view] .background .top-section {
+  color: #333;
 }
 
-.container-fluid.background.first a
-{
-  color: #fff;
-  text-decoration: underline;
+[ave-default-election] .avb-top-navbar a {
+  color: @av-secondary-contrast;
 }
 
-[av-change-lang]:hover
-{
-  background-color: #eee;
-}
-.navbar-admin.adminhead .nav > li > a:focus,
-.navbar-admin.adminhead .nav > li > a:hover
-{
-  color: #000;
+[ave-default-election] .avb-top-navbar .pull-right,
+[av-booth] [av-change-lang],
+[av-booth] .avb-top-navbar > .pull-right {
+  display: none;
 }
 
-.navbar-admin.adminhead .nav > li
-{
-  a
-  {
-    color: @av-primary-contrast;
-  }
+[ave-default-election] .avb-top-navbar > .text-center,
+[av-booth] .avb-top-navbar > .text-center {
+  text-align: right !important;
+}
 
-  background-color: @av-primary;
+img.logo-img {
+  padding-top: 5px;
+}
 
-  &.open
-  {
-    a {
-      color: #000;
-    }
-  }
+[av-booth] .basic-booth-layout .warnings .text-brand-primary,
+[av-booth] .warnings .text-brand-primary {
+  background-color: @av-secondary;
 }
 

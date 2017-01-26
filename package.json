@@ -1,9 +1,9 @@
 {
   "name": "agora-gui-common",
-  "version": "0.0.0",
   "scripts": {
     "grunt": "grunt"
   },
+  "version" : "3.4.0",
   "devDependencies": {
     "grunt": "~0.4",
     "grunt-angular-templates": "~0.5",
